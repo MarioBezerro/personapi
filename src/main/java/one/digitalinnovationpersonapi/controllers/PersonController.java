@@ -31,7 +31,6 @@ public class PersonController {
 
     private final PersonService personService;
 
-
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO createPerson(@RequestBody @Valid PersonDTO personDTO) {
